@@ -4,8 +4,9 @@
     {
         public MainPage()
         {
-                InitializeComponent();
+            InitializeComponent();
         }
 
+    
     }
 }

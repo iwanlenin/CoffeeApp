@@ -5,5 +5,5 @@ like some designs from [Dribble](https://dribbble.com/).
 ## Tutorials followed for this project: 
 - [Coffee App](https://www.youtube.com/watch?v=soz4o0zKars&ab_channel=DevsSchool)
 	
-	<img src="../CoffeeApp/Screenshots/cup2.png" alt="alt text" width="100"/>
+	<img src="https://github.com/iwanlenin/CoffeeApp/assets/1597727/de6dd16d-41fe-4a49-9357-a16820ff2718" alt="alt text" width="100"/>
 

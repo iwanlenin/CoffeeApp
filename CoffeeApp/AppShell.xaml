@@ -6,9 +6,28 @@
     xmlns:local="clr-namespace:CoffeeApp"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
+    <!--<ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage" />-->
+    <TabBar>
+        <Tab
+            Title="Coffee"
+            >
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+
+        </Tab>
+        <Tab
+            Title="About">
+            <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage" />
+
+        </Tab>
+    </TabBar>
 
 </Shell>

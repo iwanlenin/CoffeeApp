@@ -4,30 +4,85 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CoffeeApp"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:views="clr-namespace:CoffeeApp.View"
+    Shell.FlyoutBehavior="Flyout">
 
-    <!--<ShellContent
+    <Shell.FlyoutHeader>
+        <Grid
+            Padding="5"
+            ColumnDefinitions="0.2*,*"
+            Background="{StaticResource Orange}">
+            <Border
+                Grid.Column="0"
+                Stroke="{StaticResource LightGray}"
+                HeightRequest="40"
+                WidthRequest="40"
+                StrokeShape="RoundRectangle 90">
+                
+                <Image
+                    Source="cup.jpg"
+                    Aspect="AspectFit" />
+            </Border>
+            <VerticalStackLayout
+                Grid.Column="1"
+                Margin="10">
+                
+            <Label
+                
+                Text="Firstname Lastname" />
+            <Label
+                Text="Title" />
+            </VerticalStackLayout>
+        </Grid>
+        
+            
+    </Shell.FlyoutHeader>
+    <Shell.FlyoutBackground>
+        <LinearGradientBrush
+            StartPoint="0,0"
+            EndPoint="1,1">
+            <GradientStop
+                Color="{StaticResource DarkGray}"
+                Offset="0" />
+            <GradientStop
+                Color="{StaticResource LightGray}"
+                Offset="1" />
+        </LinearGradientBrush>
+
+    </Shell.FlyoutBackground>
+
+
+    <FlyoutItem
         Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
-    <TabBar>
-        <Tab
-            Title="Coffee"
-            >
-            <ShellContent
-                Title="Home"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="MainPage" />
+        Icon="home_icon.png"
+        >
 
-        </Tab>
-        <Tab
-            Title="About">
-            <ShellContent
-                Title="Home"
-                ContentTemplate="{DataTemplate local:MainPage}"
-                Route="MainPage" />
+        <ShellContent
+            ContentTemplate="{DataTemplate views:MainPage}" />
 
-        </Tab>
-    </TabBar>
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Coffee UI Challenge"
+        Icon="coffee_icon.png">
+        <ShellContent
+            ContentTemplate="{DataTemplate views:CoffeeUI}" />
+    </FlyoutItem>
+
+    <!--<Shell.ItemTemplate>
+        <DataTemplate>
+            <HorizontalStackLayout>
+                <Label
+                            FontFamily="IconsFont"
+                            FontSize="20"
+                            Text="{Binding Title}"
+                            TextColor="{StaticResource LightGray}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Center" />
+                
+
+            </HorizontalStackLayout>
+        </DataTemplate>
+    </Shell.ItemTemplate>-->
 
 </Shell>

@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Maui;
+﻿using CoffeeApp.View;
+using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 
 namespace CoffeeApp
@@ -22,6 +23,7 @@ namespace CoffeeApp
                 });
 
             // Pages
+            builder.Services.AddSingleton<CoffeeUI>();
             builder.Services.AddSingleton<MainPage>();
             //builder.Services.AddTransient<MonkeyDetailPage>();
 #if DEBUG

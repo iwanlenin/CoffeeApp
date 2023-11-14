@@ -51,12 +51,32 @@
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\Rubik-Light.ttf" />
 	  <None Remove="Resources\Fonts\Rubik-Regular.ttf" />
+	  <None Remove="Resources\Images\account_circie_icon.png" />
+	  <None Remove="Resources\Images\coffee_icon.png" />
+	  <None Remove="Resources\Images\home_icon.png" />
+	  <None Remove="Resources\Images\jg_profile.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="ViewModel\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="View\CoffeeUI.xaml.cs">
+	    <DependentUpon>CoffeeUI.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="View\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>

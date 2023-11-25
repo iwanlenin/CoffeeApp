@@ -46,6 +46,69 @@
     <Color x:Key="Brown">#A85D2A</Color>
     <Color x:Key="Orange">#F98638</Color>
     <Color x:Key="BGGray">#1F2225</Color>
-  
-
+    
+    <!--theme colors-->
+    <!--light theme-->
+    <Color x:Key="seed">#41682C</Color>
+    <Color x:Key="light_primary">#396A1F</Color>
+    <Color x:Key="light_onPrimary">#FFFFFF</Color>
+    <Color x:Key="light_primaryContainer">#B8F396</Color>
+    <Color x:Key="light_onPrimaryContainer">#082100</Color>
+    <Color x:Key="light_secondary">#55624C</Color>
+    <Color x:Key="light_onSecondary">#FFFFFF</Color>
+    <Color x:Key="light_secondaryContainer">#D9E7CB</Color>
+    <Color x:Key="light_onSecondaryContainer">#131F0D</Color>
+    <Color x:Key="light_tertiary">#386666</Color>
+    <Color x:Key="light_onTertiary">#FFFFFF</Color>
+    <Color x:Key="light_tertiaryContainer">#BBEBEB</Color>
+    <Color x:Key="light_onTertiaryContainer">#002020</Color>
+    <Color x:Key="light_error">#BA1A1A</Color>
+    <Color x:Key="light_errorContainer">#FFDAD6</Color>
+    <Color x:Key="light_onError">#FFFFFF</Color>
+    <Color x:Key="light_onErrorContainer">#410002</Color>
+    <Color x:Key="light_backgrolighund">#FDFDF5</Color>
+    <Color x:Key="light_onBackground">#1A1C18</Color>
+    <Color x:Key="light_outline">#74796D</Color>
+    <Color x:Key="light_inverseOnSurface">#F1F1EA</Color>
+    <Color x:Key="light_inverseSurface">#2F312D</Color>
+    <Color x:Key="light_inversePrimary">#9DD67D</Color>
+    <Color x:Key="light_shadow">#000000</Color>
+    <Color x:Key="light_surfaceTint">#396A1F</Color>
+    <Color x:Key="light_outlineVariant">#C3C8BB</Color>
+    <Color x:Key="light_scrim">#000000</Color>
+    <Color x:Key="light_surface">#FAFAF3</Color>
+    <Color x:Key="light_onSurface">#1A1C18</Color>
+    <Color x:Key="light_surfaceVariant">#E0E4D6</Color>
+    <Color x:Key="light_onSurfaceVariant">#43483E</Color>
+    
+    <Color x:Key="dark_primary">#9DD67D</Color>
+    <Color x:Key="dark_onPrimary">#123800</Color>
+    <Color x:Key="dark_primaryContainer">#215106</Color>
+    <Color x:Key="dark_onPrimaryContainer">#B8F396</Color>
+    <Color x:Key="dark_secondary">#BDCBB0</Color>
+    <Color x:Key="dark_onSecondary">#283420</Color>
+    <Color x:Key="dark_secondaryContainer">#3E4A35</Color>
+    <Color x:Key="dark_onSecondaryContainer">#D9E7CB</Color>
+    <Color x:Key="dark_tertiary">#A0CFCF</Color>
+    <Color x:Key="dark_onTertiary">#003737</Color>
+    <Color x:Key="dark_tertiaryContainer">#1E4E4E</Color>
+    <Color x:Key="dark_onTertiaryContainer">#BBEBEB</Color>
+    <Color x:Key="dark_error">#FFB4AB</Color>
+    <Color x:Key="dark_errorContainer">#93000A</Color>
+    <Color x:Key="dark_onError">#690005</Color>
+    <Color x:Key="dark_onErrorContainer">#FFDAD6</Color>
+    <Color x:Key="dark_background">#1A1C18</Color>
+    <Color x:Key="dark_onBackground">#E3E3DC</Color>
+    <Color x:Key="dark_outline">#8D9286</Color>
+    <Color x:Key="dark_inverseOnSurface">#1A1C18</Color>
+    <Color x:Key="dark_inverseSurface">#E3E3DC</Color>
+    <Color x:Key="dark_inversePrimary">#396A1F</Color>
+    <Color x:Key="dark_shadow">#000000</Color>
+    <Color x:Key="dark_surfaceTint">#9DD67D</Color>
+    <Color x:Key="dark_outlineVariant">#43483E</Color>
+    <Color x:Key="dark_scrim">#000000</Color>
+    <Color x:Key="dark_surface">#121410</Color>
+    <Color x:Key="dark_onSurface">#C6C7C0</Color>
+    <Color x:Key="dark_surfaceVariant">#43483E</Color>
+    <Color x:Key="dark_onSurfaceVariant">#C3C8BB</Color>
 </ResourceDictionary>

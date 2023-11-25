@@ -37,17 +37,10 @@
         
             
     </Shell.FlyoutHeader>
-    <Shell.FlyoutBackground>
-        <LinearGradientBrush
-            StartPoint="0,0"
-            EndPoint="1,1">
-            <GradientStop
-                Color="{StaticResource DarkGray}"
-                Offset="0" />
-            <GradientStop
-                Color="{StaticResource LightGray}"
-                Offset="1" />
-        </LinearGradientBrush>
+    <Shell.FlyoutBackground
+        >
+        <SolidColorBrush
+            Color="{StaticResource Orange}" />
 
     </Shell.FlyoutBackground>
 

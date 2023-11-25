@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
     x:Class="CoffeeApp.View.CoffeeUI"
+    xmlns:FontIcons="clr-namespace:CoffeeApp.Helpers"
     BackgroundColor="{StaticResource BGGray}">
 
 
@@ -21,13 +22,12 @@
 
             <Grid
                 RowDefinitions=".3*,.7*">
-
-
                 <Image
                     Grid.RowSpan="2"
                     Aspect="AspectFill"
                     Source="cup.jpg" />
                 <Grid
+                    Grid.Row="0"
                     ColumnDefinitions="*,*">
                     <Border
                         Margin="15, 35,0,0"
@@ -43,8 +43,9 @@
                         <Label
                             FontFamily="IconsFont"
                             FontSize="20"
-                            Text="&#xE801;"
-                            TextColor="{StaticResource LightGray}"
+                            FontAutoScalingEnabled="True"
+                            Text="{x:Static FontIcons:IconFont.LeftCircled1}"
+                            TextColor="{StaticResource Orange}"
                             HorizontalOptions="Center"
                             VerticalOptions="Center" />
 
@@ -56,6 +57,7 @@
                         WidthRequest="50"
                         HorizontalOptions="End"
                         VerticalOptions="Start"
+                        
                         Grid.Column="1">
                         <Border.StrokeShape>
                             <RoundRectangle
@@ -64,10 +66,12 @@
                         <Label
                             FontFamily="IconsFont"
                             FontSize="20"
-                            Text="&#xE800;"
-                            TextColor="{StaticResource LightGray}"
+                            FontAutoScalingEnabled="True"
+                            Text="{x:Static FontIcons:IconFont.Heart}"
+                            TextColor="{StaticResource Orange}"
                             HorizontalOptions="Center"
-                            VerticalOptions="Center" />
+                            VerticalOptions="Center"
+                            />
                     </Border>
 
                 </Grid>

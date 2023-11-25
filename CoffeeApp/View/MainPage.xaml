@@ -2,57 +2,129 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CoffeeApp.View.MainPage"
-             Title="MainPage">
-    <Grid
-        RowDefinitions=".4*,.1*,.1*,.4*"
-        ColumnDefinitions="*,*,*"
-        >
-        
-        <!--<Grid
-            Grid.Column="1"
-            Grid.Row="0"
-            RowDefinitions=".6*,.4*">-->
+             Title="MainPage"
+             BackgroundColor="{AppThemeBinding Light={StaticResource light_background}, Dark={StaticResource dark_background}}"
+             Padding="0">
+    <ContentPage.Resources>
+
+        <Style
+            TargetType="Border"
+            x:Key="BorderCard">
+            <Setter
+                Property="StrokeShape"
+                Value="RoundRectangle 15" />
+
+        </Style>
+
+
+    </ContentPage.Resources>
+
+        <Grid
+        RowDefinitions=".2*,.2*,.2*,.4*">
+
         <Border
             Grid.Row="0"
-            Grid.Column="1"
-            HeightRequest="100"
-            WidthRequest="100"
-            VerticalOptions="Start"
-            Margin="10"
-            Stroke="{StaticResource Brown}"
-            StrokeShape="RoundRectangle 90"
-            >
-            <Border.Shadow>
-                <Shadow
-                    Brush="{StaticResource Brown}"
-                    Offset="5,5"
-                    Opacity=".8" />
-            </Border.Shadow>
+            Grid.RowSpan="3">
             <Image
-                Source="jg_profile.jpg"
+                Source="{AppThemeBinding Light=galaxy.jpg, Dark=planet.jpg}"
                 Aspect="AspectFill" />
         </Border>
-          
-        <!--</Grid>-->
-        <BoxView
-            VerticalOptions="Start"
+        <Border
             Grid.Row="1"
-            Grid.ColumnSpan="4"
-            HeightRequest="1"
-            Opacity=".3"
-            Margin="5"
-            Color="{StaticResource BGGray}"
-          />
+            Grid.RowSpan="3"
+            StrokeShape="RoundRectangle 30,30,0,0"
+            BackgroundColor="{AppThemeBinding Light={StaticResource light_surface}, Dark={StaticResource dark_surface}}"/>
+        <Grid
+            Grid.RowSpan="2"
+            RowDefinitions="*,*,*">
+
+
+            <Border
+                Grid.Row="1"
+                HeightRequest="100"
+                WidthRequest="100"
+                VerticalOptions="Start"
+                Margin="10"
+                Stroke="{StaticResource Brown}"
+                StrokeShape="RoundRectangle 90">
+                <Border.Shadow>
+                    <Shadow
+                        Brush="{AppThemeBinding Light={StaticResource light_shadow}, Dark={StaticResource dark_shadow}}"
+                        Offset="5,5"
+                        Opacity=".8" />
+                </Border.Shadow>
+                <Image
+                    Source="jg_profile.jpg"
+                    Aspect="AspectFill" />
+            </Border>
+
+        </Grid>
+        <ScrollView
+            
+            Grid.Row="2"
+            Grid.RowSpan="2"
+            >
+
+            <StackLayout
+                Orientation="Vertical"
+               
+                Margin="10"
+                BackgroundColor="Red">
+                <Border
+                    
+                  
+                    HeightRequest="100" />
+                <Border
+                    BackgroundColor="Green"
+                    Style="{StaticResource BorderCard}"
+                    
+                    HeightRequest="100" />
+                <Border
+                    BackgroundColor="Blue"
+                    
+                    HeightRequest="100" />
+                <Border
+                    BackgroundColor="Green"
+                  
+                    HeightRequest="100" />
+                <Border
+                    BackgroundColor="Blue"
+             
+                    HeightRequest="100" />
+                <Border
+                    BackgroundColor="Green"
+                   
+                    HeightRequest="100" />
+            </StackLayout>
+        </ScrollView>
+        <!--<Grid
+            BackgroundColor="Red"
+            Grid.Row="2"
+            Grid.RowSpan="2">
+            
+        </Grid>-->
+
+
+        <!--</Grid>-->
+        <!--
+        <BoxView VerticalOptions="Start" Grid.Row="1" Grid.ColumnSpan="4" HeightRequest="1" Opacity=".3" Margin="5" Color="{StaticResource BGGray}" />
         <Grid
             Grid.Row="1"
             Grid.ColumnSpan="3"
             VerticalOptions="Center"
             Padding="10"
-            ColumnDefinitions=".4*,.4*,.1*"
+            ColumnDefinitions=".4*,.4*,.2*"
             ColumnSpacing="5">
-            <Button Grid.Column="0"/>
-            <Button Grid.Column="1"/>
-            <Button Grid.Column="2"/>
+            <Button Grid.Column="1" Opacity=".5" Style="{StaticResource ButtonOtlineStyle}" Text="BaseButton"/>
+            <Button Grid.Column="0" Opacity=".5" Style="{StaticResource ButtonStyleSecondary}" Text="SecondaryButton"/>
+
+            <Button
+                Grid.Column="2"
+                Opacity=".5"
+                Style="{StaticResource ButtonStyleTertiary}"
+                IsEnabled="False"
+                Text="DisabledButton"
+                />
         </Grid>
         <BoxView
             Grid.Row="1"
@@ -69,7 +141,7 @@
             VerticalOptions="End"
             Opacity=".3"
             Margin="5"
-            Color="{StaticResource BGGray}" />
+            Color="{StaticResource BGGray}" />-->
 
     </Grid>
 </ContentPage>

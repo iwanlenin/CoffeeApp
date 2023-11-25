@@ -53,8 +53,10 @@
 	  <None Remove="Resources\Fonts\Rubik-Regular.ttf" />
 	  <None Remove="Resources\Images\account_circie_icon.png" />
 	  <None Remove="Resources\Images\coffee_icon.png" />
+	  <None Remove="Resources\Images\galaxy.jpg" />
 	  <None Remove="Resources\Images\home_icon.png" />
 	  <None Remove="Resources\Images\jg_profile.jpg" />
+	  <None Remove="Resources\Images\planet.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -17,9 +17,11 @@ namespace CoffeeApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    fonts.AddFont("fontello.ttf", "IconsFont");
+                    
                     fonts.AddFont("Rubik-Regular.ttf", "RubikRegular");
-                    fonts.AddFont("Rubik-Light.ttf", "RubikLight");
+         
+                    fonts.AddFont("fontello.ttf", "IconsFont");
+             
                 });
 
             // Pages

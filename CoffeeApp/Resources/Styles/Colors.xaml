@@ -40,7 +40,12 @@
     <Color x:Key="Blue100Accent">#3E8EED</Color>
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
-<!--App colop pallete-->
+    
+    <!--Dalle Challange Colors-->
+    <Color
+        x:Key="Dalle_BackgroungColor">#101216</Color>
+    
+<!--Coffee app colorp pallete-->
     <Color x:Key="DarkGray">#2B2E32</Color>
     <Color x:Key="LightGray">#8B8E8E</Color>
     <Color x:Key="Brown">#A85D2A</Color>

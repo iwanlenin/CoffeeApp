@@ -27,6 +27,7 @@ namespace CoffeeApp
             // Pages
             builder.Services.AddSingleton<CoffeeUI>();
             builder.Services.AddSingleton<MainPage>();
+      
             //builder.Services.AddTransient<MonkeyDetailPage>();
 #if DEBUG
             builder.Logging.AddDebug();

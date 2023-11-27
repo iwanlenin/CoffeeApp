@@ -5,13 +5,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:CoffeeApp"
     xmlns:views="clr-namespace:CoffeeApp.View"
+    xmlns:dalle_views="clr-namespace:CoffeeApp.View.DaleeChalange"
+    xmlns:FontIcons="clr-namespace:CoffeeApp.Helpers"
     Shell.FlyoutBehavior="Flyout">
 
     <Shell.FlyoutHeader>
         <Grid
             Padding="5"
             ColumnDefinitions="0.2*,*"
-            Background="{StaticResource Orange}">
+            Background="{AppThemeBinding Light={StaticResource light_primaryContainer}, Dark={StaticResource dark_scrim}}">
             <Border
                 Grid.Column="0"
                 Stroke="{StaticResource LightGray}"
@@ -26,29 +28,25 @@
             <VerticalStackLayout
                 Grid.Column="1"
                 Margin="10">
-                
-            <Label
-                
-                Text="Firstname Lastname" />
-            <Label
-                Text="Title" />
             </VerticalStackLayout>
         </Grid>
         
             
     </Shell.FlyoutHeader>
-    <Shell.FlyoutBackground
-        >
-        <SolidColorBrush
-            Color="{StaticResource Orange}" />
+    <Shell.FlyoutBackground>
+        <SolidColorBrush Color="{AppThemeBinding Light={StaticResource light_surface}, Dark={StaticResource dark_surface}}" />
 
     </Shell.FlyoutBackground>
 
 
     <FlyoutItem
-        Title="Home"
-        Icon="home_icon.png"
-        >
+        Title="Home">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource
+                FontFamily="fontello"
+                Glyph="{x:Static FontIcons:IconFont.HomeOutline}"
+                Color="{AppThemeBinding Light={StaticResource light_onSurface}, Dark={StaticResource dark_onSurface}}" />
+        </FlyoutItem.FlyoutIcon>
 
         <ShellContent
             ContentTemplate="{DataTemplate views:MainPage}" />
@@ -56,11 +54,31 @@
     </FlyoutItem>
 
     <FlyoutItem
-        Title="Coffee UI Challenge"
-        Icon="coffee_icon.png">
+        Title="Coffee UI Challenge">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource
+                FontFamily="fontello"
+                Glyph="{x:Static FontIcons:IconFont.Coffee}"
+                Color="{AppThemeBinding Light={StaticResource light_onSurface}, Dark={StaticResource dark_onSurface}}" />
+        </FlyoutItem.FlyoutIcon>
         <ShellContent
             ContentTemplate="{DataTemplate views:CoffeeUI}" />
     </FlyoutItem>
+
+    <FlyoutItem
+        Title="Dalle Chalange">
+        <FlyoutItem.FlyoutIcon>
+            <FontImageSource
+                FontFamily="fontello"
+                Glyph="{x:Static FontIcons:IconFont.Compass}"
+                Color="{AppThemeBinding Light={StaticResource light_onSurface}, Dark={StaticResource dark_onSurface}}"
+                 />
+        </FlyoutItem.FlyoutIcon>
+        <ShellContent
+            ContentTemplate="{DataTemplate dalle_views:DashboardView}" />
+
+    </FlyoutItem>
+
 
     <!--<Shell.ItemTemplate>
         <DataTemplate>

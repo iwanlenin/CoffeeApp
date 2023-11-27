@@ -46,11 +46,7 @@
         x:Key="Dalle_BackgroungColor">#101216</Color>
     
 <!--Coffee app colorp pallete-->
-    <Color x:Key="DarkGray">#2B2E32</Color>
-    <Color x:Key="LightGray">#8B8E8E</Color>
-    <Color x:Key="Brown">#A85D2A</Color>
-    <Color x:Key="Orange">#F98638</Color>
-    <Color x:Key="BGGray">#1F2225</Color>
+
     
     <!--theme colors-->
     <!--light theme-->

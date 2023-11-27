@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CoffeeApp.View.DaleeChalange.DashboardView"
              Title="DashboardView"
-             BackgroundColor="{StaticResource Dalle_BackgroungColor}">
+             BackgroundColor="{StaticResource Dalle_BackgroungColor}"
+             Shell.NavBarIsVisible="False">
     <Grid
         Margin="25,25,0,0"
         RowDefinitions=".1*,.2*,.15*,.45*,.1*" >

@@ -66,10 +66,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModel\" />
-	</ItemGroup>
-
-	<ItemGroup>
 	  <Compile Update="View\CoffeeUI.xaml.cs">
 	    <DependentUpon>CoffeeUI.xaml</DependentUpon>
 	  </Compile>

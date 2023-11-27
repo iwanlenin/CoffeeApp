@@ -4,9 +4,10 @@
              x:Class="CoffeeApp.View.DaleeChalange.DashboardView"
              Title="DashboardView"
              BackgroundColor="{StaticResource Dalle_BackgroungColor}">
-    <VerticalStackLayout>
-        <Label
-            Text="DashboardView" />
-    </VerticalStackLayout>
+    <Grid
+        Margin="25,25,0,0"
+        RowDefinitions=".1*,.2*,.15*,.45*,.1*" >
+        
+    </Grid>
      
 </ContentPage>

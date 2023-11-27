@@ -71,7 +71,7 @@
     <Color x:Key="light_errorContainer">#FFDAD6</Color>
     <Color x:Key="light_onError">#FFFFFF</Color>
     <Color x:Key="light_onErrorContainer">#410002</Color>
-    <Color x:Key="light_backgrolighund">#FDFDF5</Color>
+    <Color x:Key="light_background">#FDFDF5</Color>
     <Color x:Key="light_onBackground">#1A1C18</Color>
     <Color x:Key="light_outline">#74796D</Color>
     <Color x:Key="light_inverseOnSurface">#F1F1EA</Color>

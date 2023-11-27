@@ -49,7 +49,8 @@
         </FlyoutItem.FlyoutIcon>
 
         <ShellContent
-            ContentTemplate="{DataTemplate views:MainPage}" />
+            ContentTemplate="{DataTemplate views:MainPage}"
+            Route="MainPage"/>
 
     </FlyoutItem>
 
@@ -62,7 +63,8 @@
                 Color="{AppThemeBinding Light={StaticResource light_onSurface}, Dark={StaticResource dark_onSurface}}" />
         </FlyoutItem.FlyoutIcon>
         <ShellContent
-            ContentTemplate="{DataTemplate views:CoffeeUI}" />
+            ContentTemplate="{DataTemplate views:CoffeeUI}"
+            Route="CoffeeUI"/>
     </FlyoutItem>
 
     <FlyoutItem
@@ -75,7 +77,8 @@
                  />
         </FlyoutItem.FlyoutIcon>
         <ShellContent
-            ContentTemplate="{DataTemplate dalle_views:DashboardView}" />
+            ContentTemplate="{DataTemplate dalle_views:DashboardView}"
+            Route="DashboardView"/>
 
     </FlyoutItem>
 

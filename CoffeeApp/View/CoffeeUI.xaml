@@ -3,9 +3,13 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+    xmlns:viewModel="clr-namespace:CoffeeApp.ViewModel"
     x:Class="CoffeeApp.View.CoffeeUI"
     xmlns:FontIcons="clr-namespace:CoffeeApp.Helpers"
-    BackgroundColor="{StaticResource BGGray}">
+    BackgroundColor="{StaticResource BGGray}"
+    Title="Coffee UI Chalange"
+    Shell.NavBarIsVisible="False"
+    x:DataType="viewModel:CoffeeUIViewModel">
 
 
     <Grid
@@ -47,7 +51,15 @@
                             Text="{x:Static FontIcons:IconFont.LeftCircled1}"
                             TextColor="{StaticResource Orange}"
                             HorizontalOptions="Center"
-                            VerticalOptions="Center" />
+                            VerticalOptions="Center"
+                            ToolTipProperties.Text="{Binding GoBackToolTip}">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding GoBackCommand}"
+                                   />
+                            </Label.GestureRecognizers>
+                          
+                        </Label>
 
                     </Border>
                     <Border
@@ -149,7 +161,8 @@
                     FontFamily="RubikRegular"
                     Text="Add to cart"
                     VerticalOptions="Center"
-                    HeightRequest="40" />
+                    HeightRequest="40"
+                    Command="{Binding AddToCardCommand}"/>
             </Grid>
         </Border>
         <Grid
@@ -290,7 +303,8 @@
                 Grid.Row="2"
                 BackgroundColor="{StaticResource Brown}"
                 FontFamily="RubikRegular"
-                Text="Buy Now" />
+                Text="Buy Now" 
+                Command="{Binding GoBackCommand}"/>
 
 
         </Grid>

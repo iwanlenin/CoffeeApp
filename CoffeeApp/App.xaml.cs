@@ -1,4 +1,6 @@
-﻿namespace CoffeeApp
+﻿// Ignore Spelling: App
+
+namespace CoffeeApp
 {
     public partial class App : Application
     {

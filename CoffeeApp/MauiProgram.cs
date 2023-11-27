@@ -1,4 +1,5 @@
 ﻿using CoffeeApp.View;
+using CoffeeApp.ViewModel;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
 
@@ -17,17 +18,18 @@ namespace CoffeeApp
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-                    
+
                     fonts.AddFont("Rubik-Regular.ttf", "RubikRegular");
-         
+
                     fonts.AddFont("fontello.ttf", "IconsFont");
-             
+
                 });
 
             // Pages
-            builder.Services.AddSingleton<CoffeeUI>();
+            builder.Services.AddTransient<CoffeeUI>();
             builder.Services.AddSingleton<MainPage>();
-      
+            //View models
+            builder.Services.AddSingleton<CoffeeUIViewModel>();
             //builder.Services.AddTransient<MonkeyDetailPage>();
 #if DEBUG
             builder.Logging.AddDebug();

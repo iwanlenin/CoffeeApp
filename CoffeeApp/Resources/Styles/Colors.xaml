@@ -42,8 +42,7 @@
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
     
     <!--Dalle Challange Colors-->
-    <Color
-        x:Key="Dalle_BackgroungColor">#101216</Color>
+  
     
 <!--Coffee app colorp pallete-->
 

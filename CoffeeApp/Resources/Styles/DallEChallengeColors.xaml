@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    
+    <Color x:Key="Dalle_BackgroungColor">#101216</Color>
+    <Color x:Key="Dalle_HamburgerMenueColor">#CACDD3</Color>
+    <Color x:Key="DallE_LabelColor">White</Color>
+    <Color x:Key="DallE_SecondLevelLabelColor">#ACB1BB</Color>
+    <Color x:Key="DallE_GrayLabelColor">#869CBD</Color>
+    <Color x:Key="DallE_ProfileFillColor">#1F252A</Color>
+    <Color x:Key="DallE_ButtonBackgroundColor">#E8FF8E</Color>
+    <Color x:Key="DallE_ButtonTextColor">#101216</Color>
+
+</ResourceDictionary>

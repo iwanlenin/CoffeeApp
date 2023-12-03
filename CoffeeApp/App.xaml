@@ -9,7 +9,7 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
                 <ResourceDictionary Source="Resources/Styles/CoffeeUIColors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/DallEChalangeColors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/DallEChallengeColors.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

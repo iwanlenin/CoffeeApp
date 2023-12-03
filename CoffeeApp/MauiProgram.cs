@@ -2,6 +2,7 @@
 using CoffeeApp.ViewModel;
 using CommunityToolkit.Maui;
 using Microsoft.Extensions.Logging;
+using PanCardView;
 
 namespace CoffeeApp
 {
@@ -14,14 +15,15 @@ namespace CoffeeApp
                 .UseMauiApp<App>()
                 // Initialize the .NET MAUI Community Toolkit by adding the below line of code
                 .UseMauiCommunityToolkit()
+                .UseCardsView()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-
                     fonts.AddFont("Rubik-Regular.ttf", "RubikRegular");
-
                     fonts.AddFont("fontello.ttf", "IconsFont");
+                    fonts.AddFont("Nexa-Heavy.ttf", "NexaHeavy");
+                    fonts.AddFont("Nexa-ExtraLight.ttf", "NexaLight");
 
                 });
 

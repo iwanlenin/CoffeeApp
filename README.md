@@ -15,3 +15,6 @@ like some designs from [Dribble](https://dribbble.com/).
 ## NuGet Packages used:
 - [cardsview.maui](https://github.com/AndreiMisiukevich/CardView.MAUI)
 
+
+
+

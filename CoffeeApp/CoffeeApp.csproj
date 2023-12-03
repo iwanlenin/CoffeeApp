@@ -49,14 +49,44 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Fonts\Nexa-ExtraLight.ttf" />
+	  <None Remove="Resources\Fonts\Nexa-Heavy.ttf" />
 	  <None Remove="Resources\Fonts\Rubik-Light.ttf" />
 	  <None Remove="Resources\Fonts\Rubik-Regular.ttf" />
+	  <None Remove="Resources\Images\account_circie_icon.png" />
+	  <None Remove="Resources\Images\coffee_icon.png" />
+	  <None Remove="Resources\Images\galaxy.jpg" />
+	  <None Remove="Resources\Images\home_icon.png" />
+	  <None Remove="Resources\Images\jg_profile.jpg" />
+	  <None Remove="Resources\Images\planet.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CardsView.Maui" Version="0.0.4" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="View\CoffeeUI.xaml.cs">
+	    <DependentUpon>CoffeeUI.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Resources\Styles\CoffeeUIColors.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Resources\Styles\DallEChallengeColors.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\DalleChallenge\DashboardView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="View\MainPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	</ItemGroup>
 
 </Project>
